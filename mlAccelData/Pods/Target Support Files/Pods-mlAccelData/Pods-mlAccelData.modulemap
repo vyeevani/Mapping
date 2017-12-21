@@ -1,0 +1,6 @@
+framework module Pods_mlAccelData {
+  umbrella header "Pods-mlAccelData-umbrella.h"
+
+  export *
+  module * { export * }
+}

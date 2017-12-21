@@ -1,0 +1,6 @@
+framework module Pods_mlAccelDataUITests {
+  umbrella header "Pods-mlAccelDataUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

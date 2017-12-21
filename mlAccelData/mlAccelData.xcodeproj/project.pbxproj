@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FB08A0C2993BBAC9C77CC70 /* Pods_mlAccelData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03EF0AD1FE51E9BBEF4E5D95 /* Pods_mlAccelData.framework */; };
+		559BB2961FD27A5900300A89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559BB2951FD27A5900300A89 /* AppDelegate.swift */; };
+		559BB2981FD27A5900300A89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559BB2971FD27A5900300A89 /* ViewController.swift */; };
+		559BB29B1FD27A5900300A89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559BB2991FD27A5900300A89 /* Main.storyboard */; };
+		559BB29E1FD27A5900300A89 /* mlAccelData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 559BB29C1FD27A5900300A89 /* mlAccelData.xcdatamodeld */; };
+		559BB2A01FD27A5900300A89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559BB29F1FD27A5900300A89 /* Assets.xcassets */; };
+		559BB2A31FD27A5900300A89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559BB2A11FD27A5900300A89 /* LaunchScreen.storyboard */; };
+		559BB2AE1FD27A5900300A89 /* mlAccelDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559BB2AD1FD27A5900300A89 /* mlAccelDataTests.swift */; };
+		559BB2B91FD27A5900300A89 /* mlAccelDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559BB2B81FD27A5900300A89 /* mlAccelDataUITests.swift */; };
+		55A9A7741FD2882E00AB2084 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5565E9191FD286BC00E649EA /* GoogleService-Info.plist */; };
+		6B846E55FFCA80421CD4B743 /* Pods_mlAccelDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F10496E0A1F501502D45D25 /* Pods_mlAccelDataTests.framework */; };
+		C91868864937B945226FA46A /* Pods_mlAccelDataUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E1F8087B0D9D1657D41133 /* Pods_mlAccelDataUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		559BB2AA1FD27A5900300A89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559BB28A1FD27A5900300A89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 559BB2911FD27A5900300A89;
+			remoteInfo = mlAccelData;
+		};
+		559BB2B51FD27A5900300A89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559BB28A1FD27A5900300A89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 559BB2911FD27A5900300A89;
+			remoteInfo = mlAccelData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03EF0AD1FE51E9BBEF4E5D95 /* Pods_mlAccelData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mlAccelData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		346C95CD3F79AF0FD5B5C00E /* Pods-mlAccelData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mlAccelData.release.xcconfig"; path = "Pods/Target Support Files/Pods-mlAccelData/Pods-mlAccelData.release.xcconfig"; sourceTree = "<group>"; };
+		5565E9191FD286BC00E649EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		559BB2921FD27A5900300A89 /* mlAccelData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mlAccelData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		559BB2951FD27A5900300A89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		559BB2971FD27A5900300A89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		559BB29A1FD27A5900300A89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		559BB29D1FD27A5900300A89 /* mlAccelData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mlAccelData.xcdatamodel; sourceTree = "<group>"; };
+		559BB29F1FD27A5900300A89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		559BB2A21FD27A5900300A89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		559BB2A41FD27A5900300A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559BB2A91FD27A5900300A89 /* mlAccelDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mlAccelDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		559BB2AD1FD27A5900300A89 /* mlAccelDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mlAccelDataTests.swift; sourceTree = "<group>"; };
+		559BB2AF1FD27A5900300A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559BB2B41FD27A5900300A89 /* mlAccelDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mlAccelDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		559BB2B81FD27A5900300A89 /* mlAccelDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mlAccelDataUITests.swift; sourceTree = "<group>"; };
+		559BB2BA1FD27A5900300A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F10496E0A1F501502D45D25 /* Pods_mlAccelDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mlAccelDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AAE9EAAC3B11E71F6BE9046 /* Pods-mlAccelDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mlAccelDataTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mlAccelDataTests/Pods-mlAccelDataTests.release.xcconfig"; sourceTree = "<group>"; };
+		8CB9C77CBBA25B6EBB933818 /* Pods-mlAccelDataUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mlAccelDataUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mlAccelDataUITests/Pods-mlAccelDataUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA7541D59F0459D9EAAA681F /* Pods-mlAccelData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mlAccelData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mlAccelData/Pods-mlAccelData.debug.xcconfig"; sourceTree = "<group>"; };
+		AD1DAAEB3D12199EEB7C8ED3 /* Pods-mlAccelDataUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mlAccelDataUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mlAccelDataUITests/Pods-mlAccelDataUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C7E1F8087B0D9D1657D41133 /* Pods_mlAccelDataUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mlAccelDataUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE41F7AD1E78A4CB594C21D /* Pods-mlAccelDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mlAccelDataTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mlAccelDataTests/Pods-mlAccelDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		559BB28F1FD27A5900300A89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB08A0C2993BBAC9C77CC70 /* Pods_mlAccelData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559BB2A61FD27A5900300A89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B846E55FFCA80421CD4B743 /* Pods_mlAccelDataTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559BB2B11FD27A5900300A89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91868864937B945226FA46A /* Pods_mlAccelDataUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50EB00E521285EC701C254A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03EF0AD1FE51E9BBEF4E5D95 /* Pods_mlAccelData.framework */,
+				7F10496E0A1F501502D45D25 /* Pods_mlAccelDataTests.framework */,
+				C7E1F8087B0D9D1657D41133 /* Pods_mlAccelDataUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		559BB2891FD27A5900300A89 = {
+			isa = PBXGroup;
+			children = (
+				559BB2941FD27A5900300A89 /* mlAccelData */,
+				559BB2AC1FD27A5900300A89 /* mlAccelDataTests */,
+				559BB2B71FD27A5900300A89 /* mlAccelDataUITests */,
+				559BB2931FD27A5900300A89 /* Products */,
+				F1B3677430562F0C1D72D03B /* Pods */,
+				50EB00E521285EC701C254A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		559BB2931FD27A5900300A89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				559BB2921FD27A5900300A89 /* mlAccelData.app */,
+				559BB2A91FD27A5900300A89 /* mlAccelDataTests.xctest */,
+				559BB2B41FD27A5900300A89 /* mlAccelDataUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		559BB2941FD27A5900300A89 /* mlAccelData */ = {
+			isa = PBXGroup;
+			children = (
+				559BB2951FD27A5900300A89 /* AppDelegate.swift */,
+				5565E9191FD286BC00E649EA /* GoogleService-Info.plist */,
+				559BB2971FD27A5900300A89 /* ViewController.swift */,
+				559BB2991FD27A5900300A89 /* Main.storyboard */,
+				559BB29F1FD27A5900300A89 /* Assets.xcassets */,
+				559BB2A11FD27A5900300A89 /* LaunchScreen.storyboard */,
+				559BB2A41FD27A5900300A89 /* Info.plist */,
+				559BB29C1FD27A5900300A89 /* mlAccelData.xcdatamodeld */,
+			);
+			path = mlAccelData;
+			sourceTree = "<group>";
+		};
+		559BB2AC1FD27A5900300A89 /* mlAccelDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				559BB2AD1FD27A5900300A89 /* mlAccelDataTests.swift */,
+				559BB2AF1FD27A5900300A89 /* Info.plist */,
+			);
+			path = mlAccelDataTests;
+			sourceTree = "<group>";
+		};
+		559BB2B71FD27A5900300A89 /* mlAccelDataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				559BB2B81FD27A5900300A89 /* mlAccelDataUITests.swift */,
+				559BB2BA1FD27A5900300A89 /* Info.plist */,
+			);
+			path = mlAccelDataUITests;
+			sourceTree = "<group>";
+		};
+		F1B3677430562F0C1D72D03B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA7541D59F0459D9EAAA681F /* Pods-mlAccelData.debug.xcconfig */,
+				346C95CD3F79AF0FD5B5C00E /* Pods-mlAccelData.release.xcconfig */,
+				EBE41F7AD1E78A4CB594C21D /* Pods-mlAccelDataTests.debug.xcconfig */,
+				8AAE9EAAC3B11E71F6BE9046 /* Pods-mlAccelDataTests.release.xcconfig */,
+				8CB9C77CBBA25B6EBB933818 /* Pods-mlAccelDataUITests.debug.xcconfig */,
+				AD1DAAEB3D12199EEB7C8ED3 /* Pods-mlAccelDataUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		559BB2911FD27A5900300A89 /* mlAccelData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559BB2BD1FD27A5900300A89 /* Build configuration list for PBXNativeTarget "mlAccelData" */;
+			buildPhases = (
+				9BE52D7A691BB79833DAF3BE /* [CP] Check Pods Manifest.lock */,
+				559BB28E1FD27A5900300A89 /* Sources */,
+				559BB28F1FD27A5900300A89 /* Frameworks */,
+				559BB2901FD27A5900300A89 /* Resources */,
+				4F42FDE63833CDD20FEB4C58 /* [CP] Embed Pods Frameworks */,
+				A757B1D3E6090732E98F914F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mlAccelData;
+			productName = mlAccelData;
+			productReference = 559BB2921FD27A5900300A89 /* mlAccelData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		559BB2A81FD27A5900300A89 /* mlAccelDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559BB2C01FD27A5900300A89 /* Build configuration list for PBXNativeTarget "mlAccelDataTests" */;
+			buildPhases = (
+				2DE0274CC5EF44C320A33315 /* [CP] Check Pods Manifest.lock */,
+				559BB2A51FD27A5900300A89 /* Sources */,
+				559BB2A61FD27A5900300A89 /* Frameworks */,
+				559BB2A71FD27A5900300A89 /* Resources */,
+				CC04154ECDCABA1B868C5F67 /* [CP] Embed Pods Frameworks */,
+				6721FA28384E106C2F5F5CF2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				559BB2AB1FD27A5900300A89 /* PBXTargetDependency */,
+			);
+			name = mlAccelDataTests;
+			productName = mlAccelDataTests;
+			productReference = 559BB2A91FD27A5900300A89 /* mlAccelDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		559BB2B31FD27A5900300A89 /* mlAccelDataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559BB2C31FD27A5900300A89 /* Build configuration list for PBXNativeTarget "mlAccelDataUITests" */;
+			buildPhases = (
+				71034009ED5B17DADD0143E5 /* [CP] Check Pods Manifest.lock */,
+				559BB2B01FD27A5900300A89 /* Sources */,
+				559BB2B11FD27A5900300A89 /* Frameworks */,
+				559BB2B21FD27A5900300A89 /* Resources */,
+				B2FB533C014EC2DA5B0D49D8 /* [CP] Embed Pods Frameworks */,
+				94A389179CBF1629FF65F562 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				559BB2B61FD27A5900300A89 /* PBXTargetDependency */,
+			);
+			name = mlAccelDataUITests;
+			productName = mlAccelDataUITests;
+			productReference = 559BB2B41FD27A5900300A89 /* mlAccelDataUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		559BB28A1FD27A5900300A89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Vineeth Yeevani";
+				TargetAttributes = {
+					559BB2911FD27A5900300A89 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					559BB2A81FD27A5900300A89 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 559BB2911FD27A5900300A89;
+					};
+					559BB2B31FD27A5900300A89 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 559BB2911FD27A5900300A89;
+					};
+				};
+			};
+			buildConfigurationList = 559BB28D1FD27A5900300A89 /* Build configuration list for PBXProject "mlAccelData" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 559BB2891FD27A5900300A89;
+			productRefGroup = 559BB2931FD27A5900300A89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				559BB2911FD27A5900300A89 /* mlAccelData */,
+				559BB2A81FD27A5900300A89 /* mlAccelDataTests */,
+				559BB2B31FD27A5900300A89 /* mlAccelDataUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		559BB2901FD27A5900300A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559BB2A31FD27A5900300A89 /* LaunchScreen.storyboard in Resources */,
+				55A9A7741FD2882E00AB2084 /* GoogleService-Info.plist in Resources */,
+				559BB2A01FD27A5900300A89 /* Assets.xcassets in Resources */,
+				559BB29B1FD27A5900300A89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559BB2A71FD27A5900300A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559BB2B21FD27A5900300A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DE0274CC5EF44C320A33315 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mlAccelDataTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F42FDE63833CDD20FEB4C58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mlAccelData/Pods-mlAccelData-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mlAccelData/Pods-mlAccelData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6721FA28384E106C2F5F5CF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mlAccelDataTests/Pods-mlAccelDataTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71034009ED5B17DADD0143E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mlAccelDataUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94A389179CBF1629FF65F562 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mlAccelDataUITests/Pods-mlAccelDataUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BE52D7A691BB79833DAF3BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mlAccelData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A757B1D3E6090732E98F914F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mlAccelData/Pods-mlAccelData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2FB533C014EC2DA5B0D49D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mlAccelDataUITests/Pods-mlAccelDataUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC04154ECDCABA1B868C5F67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mlAccelDataTests/Pods-mlAccelDataTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		559BB28E1FD27A5900300A89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559BB29E1FD27A5900300A89 /* mlAccelData.xcdatamodeld in Sources */,
+				559BB2981FD27A5900300A89 /* ViewController.swift in Sources */,
+				559BB2961FD27A5900300A89 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559BB2A51FD27A5900300A89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559BB2AE1FD27A5900300A89 /* mlAccelDataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559BB2B01FD27A5900300A89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559BB2B91FD27A5900300A89 /* mlAccelDataUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		559BB2AB1FD27A5900300A89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 559BB2911FD27A5900300A89 /* mlAccelData */;
+			targetProxy = 559BB2AA1FD27A5900300A89 /* PBXContainerItemProxy */;
+		};
+		559BB2B61FD27A5900300A89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 559BB2911FD27A5900300A89 /* mlAccelData */;
+			targetProxy = 559BB2B51FD27A5900300A89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		559BB2991FD27A5900300A89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559BB29A1FD27A5900300A89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		559BB2A11FD27A5900300A89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				559BB2A21FD27A5900300A89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		559BB2BB1FD27A5900300A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		559BB2BC1FD27A5900300A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		559BB2BE1FD27A5900300A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA7541D59F0459D9EAAA681F /* Pods-mlAccelData.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 962YYTVK57;
+				INFOPLIST_FILE = mlAccelData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.mlAccelData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		559BB2BF1FD27A5900300A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346C95CD3F79AF0FD5B5C00E /* Pods-mlAccelData.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 962YYTVK57;
+				INFOPLIST_FILE = mlAccelData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.mlAccelData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		559BB2C11FD27A5900300A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE41F7AD1E78A4CB594C21D /* Pods-mlAccelDataTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 962YYTVK57;
+				INFOPLIST_FILE = mlAccelDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.mlAccelDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mlAccelData.app/mlAccelData";
+			};
+			name = Debug;
+		};
+		559BB2C21FD27A5900300A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AAE9EAAC3B11E71F6BE9046 /* Pods-mlAccelDataTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 962YYTVK57;
+				INFOPLIST_FILE = mlAccelDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.mlAccelDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mlAccelData.app/mlAccelData";
+			};
+			name = Release;
+		};
+		559BB2C41FD27A5900300A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB9C77CBBA25B6EBB933818 /* Pods-mlAccelDataUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 962YYTVK57;
+				INFOPLIST_FILE = mlAccelDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.mlAccelDataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mlAccelData;
+			};
+			name = Debug;
+		};
+		559BB2C51FD27A5900300A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD1DAAEB3D12199EEB7C8ED3 /* Pods-mlAccelDataUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 962YYTVK57;
+				INFOPLIST_FILE = mlAccelDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.mlAccelDataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mlAccelData;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		559BB28D1FD27A5900300A89 /* Build configuration list for PBXProject "mlAccelData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559BB2BB1FD27A5900300A89 /* Debug */,
+				559BB2BC1FD27A5900300A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559BB2BD1FD27A5900300A89 /* Build configuration list for PBXNativeTarget "mlAccelData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559BB2BE1FD27A5900300A89 /* Debug */,
+				559BB2BF1FD27A5900300A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559BB2C01FD27A5900300A89 /* Build configuration list for PBXNativeTarget "mlAccelDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559BB2C11FD27A5900300A89 /* Debug */,
+				559BB2C21FD27A5900300A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559BB2C31FD27A5900300A89 /* Build configuration list for PBXNativeTarget "mlAccelDataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559BB2C41FD27A5900300A89 /* Debug */,
+				559BB2C51FD27A5900300A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		559BB29C1FD27A5900300A89 /* mlAccelData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				559BB29D1FD27A5900300A89 /* mlAccelData.xcdatamodel */,
+			);
+			currentVersion = 559BB29D1FD27A5900300A89 /* mlAccelData.xcdatamodel */;
+			path = mlAccelData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 559BB28A1FD27A5900300A89 /* Project object */;
+}

@@ -1,0 +1,4 @@
+from FirebaseData import FirebaseData
+
+data = FirebaseData()
+print(data)
