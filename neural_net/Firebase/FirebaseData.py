@@ -14,7 +14,6 @@ class FirebaseData:
         self.firebase = pyrebase.initialize_app(self.config)
         self.db = self.firebase.database()
         self.update()
-        #self.stream = self.db.stream(lambda message: self.db.get().val())
     def __repr__(self):
         return "FirebaseDataObject"
     def __str__(self):
@@ -23,9 +22,7 @@ class FirebaseData:
     def update(self):
         self.data = self.db.get().val()
     def aggregate(self):
-        temp = [i for i in self.data]
-        print(123412341234)
-        print(self.data)
-        print(temp)
-        self.matrix = pandas.DataFrame(temp).as_matrix()
-        return self.matrix
+        #picks apart the database values
+        #first loop takes apart the dictionary making sure none are zero
+        #second takes apart the last bit
+        return [[j for j in self.data[i].values()] for i in self.data if i]

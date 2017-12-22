@@ -1,6 +1,4 @@
 from Firebase.FirebaseData import FirebaseData
 
 data = FirebaseData()
-print(data.data)
-data.aggregate()
-#print(data.matrix)
+print(data.aggregate())
