@@ -1,4 +1,5 @@
 import pyrebase
+import pandas
 
 class FirebaseData:
     def __init__(self):
@@ -20,6 +21,11 @@ class FirebaseData:
         self.update()
         return(str(self.data))
     def update(self):
-        self.data = self.db.get().val()[1:]
-
-
+        self.data = self.db.get().val()
+    def aggregate(self):
+        temp = [i for i in self.data]
+        print(123412341234)
+        print(self.data)
+        print(temp)
+        self.matrix = pandas.DataFrame(temp).as_matrix()
+        return self.matrix
