@@ -1,4 +1,4 @@
-from FirebaseData import FirebaseData
+from Firebase.FirebaseData import FirebaseData
 
 data = FirebaseData()
-print(data)
+print(data.aggregate())

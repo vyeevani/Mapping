@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     var timer: Timer!
     var label: UILabel!
-    var localAccelData: [[Double]] = [[]]
+    var localAccelData: [[String:Double]] = []
     var timeOfMeasurement: Date!
     
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         initLocationService()
         
         //Start the timer which will repeat every five seconds to save the data
-        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(getData), userInfo: false, repeats: true)
+        
     }
     
     //Setup ui elements
@@ -51,11 +51,12 @@ class ViewController: UIViewController {
         //Create a new child in the database and set the reference to that new child
         ref = ref.childByAutoId()
         
-        //Create a time stamp for the database to enable velocity processing in the postproccessor
-        let timeStamp = NSDate().timeIntervalSince1970
-        
         //Set array for the new child in the array with the form  "xaccel, yaccel, zaccel, lat, long, alt
-        ref.setValuesForKeys(["data" : localAccelData, "time" : timeStamp])
+        print(localAccelData)
+        for dict in localAccelData {
+            print(dict)
+            ref.setValue(dict)
+        }
         
         //Start the cleanup of local data
         withBlock()
@@ -63,13 +64,15 @@ class ViewController: UIViewController {
     
     //Add the current xaccel, yaccel, zaccel, lat, long to the local storage array
     func addToLocal(xAccel: Double, yAccel: Double, zAccel: Double, lat: Double, long: Double, alt: Double) {
-        let localInstantAccelData = [xAccel, yAccel, zAccel, lat, long, alt]
+        //Create a time stamp for the database to enable velocity processing in the postproccessor
+        let timeStamp = NSDate().timeIntervalSince1970
+        let localInstantAccelData = ["xaccel":xAccel, "yaccel":yAccel, "zaccel":zAccel, "latatitude":lat, "longitude":long, "altitude":alt, "time":timeStamp]
         localAccelData.append(localInstantAccelData)
-        if localAccelData.count == 120 {
+        if localAccelData.count > 1 {
             //Transfer the local array to the firebase database for neural net processing
             transferData {
                 //Since data has already been transfered the local array can be erased
-                self.localAccelData = [[]]
+                self.localAccelData = []
             }
         }
     }
@@ -78,7 +81,8 @@ class ViewController: UIViewController {
         let locationLat = locationManager.location?.coordinate.latitude
         let locationLong = locationManager.location?.coordinate.longitude
         let altitude = locationManager.location?.altitude
-        print(String(describing: locationLat) + ", " + String(describing: locationLong) + ", " + String(describing: altitude))
+        print(localAccelData.count)
+        //print(String(describing: locationLat) + ", " + String(describing: locationLong) + ", " + String(describing: altitude))
         if let accelData = motionManager.accelerometerData {
             let xAccel = accelData.acceleration.x
             let yAccel = accelData.acceleration.y
@@ -100,6 +104,8 @@ class ViewController: UIViewController {
             print("Started location services")
             locationManager.startUpdatingLocation()
         }
+        print(11111)
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(getData), userInfo: false, repeats: true)
     }
 }
 

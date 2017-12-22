@@ -1,4 +1,5 @@
 import pyrebase
+import pandas
 
 class FirebaseData:
     def __init__(self):
@@ -13,13 +14,15 @@ class FirebaseData:
         self.firebase = pyrebase.initialize_app(self.config)
         self.db = self.firebase.database()
         self.update()
-        #self.stream = self.db.stream(lambda message: self.db.get().val())
     def __repr__(self):
         return "FirebaseDataObject"
     def __str__(self):
         self.update()
         return(str(self.data))
     def update(self):
-        self.data = self.db.get().val()[1:]
-
-
+        self.data = self.db.get().val()
+    def aggregate(self):
+        #picks apart the database values
+        #first loop takes apart the dictionary making sure none are zero
+        #second takes apart the last bit
+        return [[j for j in self.data[i].values()] for i in self.data if i]
