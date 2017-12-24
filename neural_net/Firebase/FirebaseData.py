@@ -14,11 +14,6 @@ class FirebaseData:
         self.firebase = pyrebase.initialize_app(self.config)
         self.db = self.firebase.database()
         self.update()
-    def __repr__(self):
-        return "FirebaseDataObject"
-    def __str__(self):
-        self.update()
-        return(str(self.data))
     def update(self):
         self.data = self.db.get().val()
     def aggregate(self):

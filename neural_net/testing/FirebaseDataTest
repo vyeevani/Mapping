@@ -1,4 +1,5 @@
-from Firebase.FirebaseData import FirebaseData
+from neural_net.Firebase.FirebaseData import FirebaseData
 
 data = FirebaseData()
-print(data.aggregate())
+print(data.data)
+print((data.aggregate()))

@@ -20,8 +20,13 @@ class ViewController: UIViewController {
     var localAccelData: [[String:Double]] = []
     var timeOfMeasurement: Date!
     
+    var masterReference : String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var refMaster = Database.database().reference().childByAutoId()
+        masterReference = refMaster.key
         
         motionManager = CMMotionManager()
         motionManager.startAccelerometerUpdates()
@@ -31,6 +36,8 @@ class ViewController: UIViewController {
         
         //Setup the location services
         initLocationService()
+        
+        
         
         //Start the timer which will repeat every five seconds to save the data
         
@@ -47,9 +54,8 @@ class ViewController: UIViewController {
     //Transfer local acceleration and position to firebase
     func transferData(withBlock: @escaping () -> ()) {
         //Set reference to the firebase database
-        var ref = Database.database().reference()
         //Create a new child in the database and set the reference to that new child
-        ref = ref.childByAutoId()
+        var ref = Database.database().reference().child(masterReference).childByAutoId()
         
         //Set array for the new child in the array with the form  "xaccel, yaccel, zaccel, lat, long, alt
         print(localAccelData)
