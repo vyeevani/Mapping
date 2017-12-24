@@ -18,7 +18,7 @@ def differences(distances):
         distances[i] = [second - first for first, second in zip(distances[i], distances[i+1])]
     return distances[:-1]
 
-def conversion_matrix(distances):
+def conversion_matrix(distances, length):
     '''
     Function generates a conversion matrix that can convert d -> v
     :param distances: list of distances
@@ -27,7 +27,7 @@ def conversion_matrix(distances):
     >>>[[8.0, 0.0, 0.0], [-16.0, 8.0, 0.0], [-16.0, -16.0, 8.0]]
     '''
     #TODO write this
-    dimension = len(distances)
+    dimension = length
     conversion_matrix = []
     for i in range(dimension):
         row = []
@@ -39,7 +39,8 @@ def conversion_matrix(distances):
             else:
                 row.append(0)
         conversion_matrix.append(row)
-    return [[j/math.pow(DATA_TIME_INTERVAL, 2) for j in i] for i in conversion_matrix]
+        return [[j for j in i] for i in conversion_matrix]
+    #return [[j/math.pow(DATA_TIME_INTERVAL, 2) for j in i] for i in conversion_matrix]
 class Data:
     def __init__(self):
         self.fir_data = FirebaseData()
@@ -52,6 +53,13 @@ class Data:
         '''
         This function process the data to provide distance differences along with also containing time differences
         '''
-        #self.distances =
-        pass
-
+        self.conversion_matrices = [[conversion_matrix(j, len(i)) for j in i] for i in self.loc_data]
+        self.conversion_matrices = [[np.array(j) for j in i] for i in self.conversion_matrices]
+        self.dis_data = [np.array(i) for i in self.loc_data]
+        length = len(self.conversion_matrices)
+        self.distances = []
+        for i in range(length):
+            row = []
+            for j in range(len(self.conversion_matrices[i])):
+                row.append(np.matmul(self.conversion_matrices[i][j], self.dis_data[i]))
+            self.distances.append(row)
