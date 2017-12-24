@@ -22,12 +22,16 @@ layer_two_synapse_output = tf.matmul(layer_one_output, layer_two_weight) + layer
 
 cross_entropy = tf.nn.softmax_cross_entropy_with_logits(labels=found, logits=layer_two_synapse_output)
 
-train_step = tf.train.AdamOptimizer().minimize(cross_entropy)
+train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
 
 #TODO: add imports for neural net
+data = Data()
+for measurements in data:
+    accel, location = measurements
+    train_step.run(feed_dict={guess:accel, found:location})
 
-#TODO: add neural net input
-
-#TODO: add hyperparameters for neural net
-
-#TODO: add output and error functions for neural net
+correct_predictions = tf.equal(tf.argmax(found, 1), tf.argmax(layer_two_synapse_output, 1))
+accuracy = tf.reduce_mean(tf.cast(correct_predictions, tf.float32))
+for test in data:
+    print(1234)
+    print(accuracy.eval(feed_dict={guess: test[0], found: test[1]}))
