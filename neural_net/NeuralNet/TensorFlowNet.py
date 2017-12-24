@@ -2,6 +2,8 @@ import tensorflow as tf
 from neural_net.Firebase.Data import Data
 
 #TODO: add neural net framework
+sess = tf.InteractiveSession()
+
 guess = tf.placeholder(tf.float32, shape=[None, 3])
 found = tf.placeholder(tf.float32, shape=[None, 3])
 
@@ -13,6 +15,8 @@ layer_one_output = tf.nn.softmax(layer_one_synapse_output)
 
 layer_two_weight = tf.Variable(tf.zeros([500, 3]))
 layer_two_bias = tf.Variable(tf.zeros([3]))
+
+sess.run(tf.global_variables_initializer())
 
 layer_two_synapse_output = tf.matmul(layer_one_output, layer_two_weight) + layer_two_bias
 
